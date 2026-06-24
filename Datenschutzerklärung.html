@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – Inventur Scanner</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #212121;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3 {
+            font-weight: 500;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+        }
+
+        table th {
+            background-color: #f5f5f5;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Datenschutzerklärung – Inventur Scanner</h1>
+</header>
+
+<div class="container">
+
+<p>
+Diese mobile Anwendung ist ein privates Projekt zur lokalen Verwaltung und Dokumentation von Bestandsinventuren. Die Nutzung erfolgt ausschließlich im Eigeninteresse der jeweiligen Person. Die Anwendung steht in keinem offiziellen Zusammenhang mit einem Arbeitgeber.
+</p>
+
+<h2>1. Verantwortlicher</h2>
+
+<p>
+Fabian Lugauer<br>
+E-Mail: fabian.lugauer@gmail.com<br>
+Postanschrift: Auf Anfrage<br>
+Weitere Informationen befinden sich im Play Store Eintrag
+</p>
+
+<h2>2. Verarbeitete Daten</h2>
+
+<ul>
+<li>Vom Nutzer freiwillig eingegebene Barcode-Nummern und Scan-Daten</li>
+<li>Materialnummern und Bezeichnungen aus importierten CSV-Katalogen</li>
+<li>Scan-Zeitstempel und Session-Informationen</li>
+<li>App-Einstellungen (Doppel-Scan-Modus, Vibration, Piepton)</li>
+<li>Kamera-Daten: Nur während aktiven Scans, werden sofort nach dem Scan verworfen</li>
+<li>Keine Benutzeridentifizierung oder persönliche Daten</li>
+</ul>
+
+<h2>3. Zweck der Verarbeitung</h2>
+
+<ul>
+<li>Erfassung und Verwaltung von Bestandsinventuren durch Barcode-Scanning</li>
+<li>Import und Verwaltung von Material-Katalogen</li>
+<li>Lokale Speicherung und Analyse von Scan-Ergebnissen</li>
+<li>Persönliche Auswertung und Dokumentation der Inventurdaten</li>
+</ul>
+
+<h2>4. Rechtsgrundlage</h2>
+
+<p>
+Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
+</p>
+
+<h2>5. Speicherung und Lokale Verarbeitung</h2>
+
+<p><strong>Lokale Speicherung:</strong> Alle Daten werden lokal auf dem Gerät in einer verschlüsselten SQLite-Datenbank gespeichert (offline-first Ansatz). Der Nutzer behält die vollständige Kontrolle über diese Daten.</p>
+
+<p><strong>Keine Server-Speicherung:</strong> Es findet keine Übertragung auf externe Server statt. Diese App funktioniert vollständig offline.</p>
+
+<p><strong>Keine Weitergabe an Dritte:</strong> Die Daten werden nicht an Dritte weitergegeben, mit Ausnahme notwendiger technischer Aufrufe durch externe Bibliotheken (siehe Punkt 6).</p>
+
+<h2>6. Externe Abhängigkeiten (Third-Party Libraries)</h2>
+
+<p>Diese App verwendet folgende Open-Source-Bibliotheken, die Daten ausschließlich lokal verarbeiten:</p>
+
+<ul>
+<li><strong>flutter/flutter:</strong> UI-Framework (lokal)</li>
+<li><strong>drift:</strong> Lokale SQLite-Datenbank</li>
+<li><strong>mobile_scanner:</strong> Barcode-Scanning (lokal, keine Datenübertragung)</li>
+<li><strong>shared_preferences:</strong> Lokale Einstellungsspeicherung</li>
+<li><strong>file_picker:</strong> Dateiauswahl (lokal)</li>
+<li><strong>share_plus:</strong> Teilen von Inhalten über Gerätesystem</li>
+<li><strong>sqlite3_flutter_libs:</strong> SQLite-Datenbankmotor</li>
+<li><strong>flutter_beep_plus:</strong> Audiosignale (lokal)</li>
+</ul>
+
+<p>
+Alle Bibliotheken verarbeiten Daten lokal auf dem Gerät. Es erfolgt keine Datenübertragung an externe Server.
+</p>
+
+<h2>7. Android-Berechtigungen</h2>
+
+<table>
+<tr>
+<th>Berechtigung</th>
+<th>Zweck</th>
+<th>Notwendig</th>
+</tr>
+<tr>
+<td><code>CAMERA</code></td>
+<td>Barcode- und QR-Code-Scanning</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td><code>ACCESS_NETWORK_STATE</code></td>
+<td>Netzwerk-Status-Prüfung</td>
+<td>Nein</td>
+</tr>
+<tr>
+<td><code>INTERNET</code></td>
+<td>Aktuell ungenutzt (Gerüst für zukünftige Features)</td>
+<td>Nein</td>
+</tr>
+</table>
+
+<p><strong>Wichtig:</strong> Die App nutzt das Internet nicht für Datenübertragung. Alle Funktionen funktionieren ohne Internetverbindung.</p>
+
+<h2>8. Datensicherheit</h2>
+
+<ul>
+<li><strong>Lokale Verschlüsslung:</strong> Die SQLite-Datenbank auf dem Gerät wird durch das Betriebssystem geschützt.</li>
+<li><strong>Geräteschutz:</strong> Daten sind durch die Gerätesicherheit (Passcode/Biometrie) geschützt.</li>
+<li><strong>Keine zusätzliche Verschlüsselung erforderlich:</strong> Da Daten lokal bleiben, ist keine App-seitige Verschlüsselung nötig.</li>
+<li><strong>Keine Speicherung von Passwörtern:</strong> Die App speichert keine Passwörter oder geheimen Schlüssel.</li>
+</ul>
+
+<h2>9. Datenlöschung durch den Nutzer</h2>
+
+<ul>
+<li><strong>Einzelne Einträge:</strong> Löschung von Scan-Sessions und Einträgen direkt in der App</li>
+<li><strong>Alle Daten:</strong> Durch Deinstallation der App oder über Android-Einstellungen → Apps → Inventur Scanner → Speicher → Daten löschen</li>
+<li><strong>Einstellungen zurücksetzen:</strong> Über App-Menü</li>
+</ul>
+
+<h2>10. Datenaufbewahrung</h2>
+
+<table>
+<tr>
+<th>Datentyp</th>
+<th>Speicherdauer</th>
+</tr>
+<tr>
+<td>Scan-Sessions und Einträge</td>
+<td>Solange bis Nutzer diese löscht</td>
+</tr>
+<tr>
+<td>App-Einstellungen</td>
+<td>Solange bis Deinstallation</td>
+</tr>
+<tr>
+<td>Kamera-Daten</td>
+<td>Nicht persistent (sofort nach Scan gelöscht)</td>
+</tr>
+</table>
+
+<h2>11. Tracking und Analytik</h2>
+
+<p>Diese Anwendung enthält keine Analysetools, keine Werbung, kein Profiling und keine Tracker.</p>
+
+<h2>12. Rechte der betroffenen Personen</h2>
+
+<p>
+Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.
+Anfragen können per E-Mail an [E-Mail eintragen] gestellt werden.
+</p>
+
+<h2>13. Kontakt für Datenschutzfragen</h2>
+
+<p>
+Fabian Lugauer<br>
+E-Mail: fabian.lugauer@gmail.com<br>
+Postanschrift: Auf Anfrage<br>
+Weitere Informationen im Play Store Eintrag
+</p>
+
+<p><strong>Stand:</strong> Juni 2026<br>
+<strong>Letzte Überarbeitung:</strong> Juni 2026</p>
+
+</div>
+
+<footer>
+© 2026 Inventur Scanner
+</footer>
+
+</body>
+</html>
