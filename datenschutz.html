@@ -62,6 +62,26 @@
             color: #666;
         }
 
+        .imprint {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .imprint summary {
+            color: #1976d2;
+            cursor: pointer;
+            list-style: none;
+            text-decoration: underline;
+        }
+
+        .imprint summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .imprint-content {
+            margin-top: 0.75rem;
+        }
+
         code {
             background-color: #f5f5f5;
             padding: 2px 6px;
@@ -248,6 +268,14 @@ Weitere Informationen im Play Store Eintrag
 
 <footer>
 © 2026 Inventur Scanner
+<details class="imprint">
+    <summary>Impressum</summary>
+    <div class="imprint-content">
+        <strong>Fabian Lugauer</strong><br>
+        E-Mail: <a href="mailto:fabian.lugauer@gmail.com">fabian.lugauer@gmail.com</a><br>
+        Postanschrift: Wombacher Straße 75, 97816 Lohr am Main
+    </div>
+</details>
 </footer>
 
 </body>
